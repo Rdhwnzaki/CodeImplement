@@ -10,9 +10,9 @@ const deteksiPalindrom = (kata) => {
         console.log(`${newkata} bukan kata palindrom`)
     }
 }
-deteksiPalindrom('Kasur ini rusak')
+deteksiPalindrom('tidur')
 
-//Reverse Word
+// Reverse Word
 const reverseWord = (kalimat) => {
     const splitKalimat = kalimat.split(' ')
     const revKalimat = splitKalimat.reverse()

@@ -7,7 +7,7 @@ const pijarFood = (harga, voucher, jarak, pajak) => {
             console.log(`Potongan : ${diskon}`)
             if (jarak > 2) {
                 jarakAwal = 5000
-                jarakTambah = (jarak - 2) * 3000
+                jarakTambah = (Math.ceil(jarak) - 2) * 3000
                 newJarak = jarakAwal + jarakTambah
                 console.log(`Biaya Antar : ${newJarak}`)
             } else {
@@ -30,7 +30,7 @@ const pijarFood = (harga, voucher, jarak, pajak) => {
             console.log(`Potongan : ${diskon}`)
             if (jarak > 2) {
                 jarakAwal = 5000
-                jarakTambah = (jarak - 2) * 3000
+                jarakTambah = (Math.ceil(jarak) - 2) * 3000
                 newJarak = jarakAwal + jarakTambah
                 console.log(`Biaya Antar : ${newJarak}`)
             } else {
@@ -57,7 +57,7 @@ const pijarFood = (harga, voucher, jarak, pajak) => {
             console.log(`Potongan : ${diskon}`)
             if (jarak > 2) {
                 jarakAwal = 5000
-                jarakTambah = (jarak - 2) * 3000
+                jarakTambah = (Math.ceil(jarak) - 2) * 3000
                 newJarak = jarakAwal + jarakTambah
                 console.log(`Biaya Antar : ${newJarak}`)
             } else {
@@ -80,7 +80,7 @@ const pijarFood = (harga, voucher, jarak, pajak) => {
             console.log(`Potongan : ${diskon}`)
             if (jarak > 2) {
                 jarakAwal = 5000
-                jarakTambah = (jarak - 2) * 3000
+                jarakTambah = (Math.ceil(jarak) - 2) * 3000
                 newJarak = jarakAwal + jarakTambah
                 console.log(`Biaya Antar : ${newJarak}`)
             } else {
@@ -103,7 +103,7 @@ const pijarFood = (harga, voucher, jarak, pajak) => {
         console.log(`Harga : ${harga}`)
         if (jarak > 2) {
             jarakAwal = 5000
-            jarakTambah = (jarak - 2) * 3000
+            jarakTambah = (Math.ceil(jarak) - 2) * 3000
             newJarak = jarakAwal + jarakTambah
             console.log(`Biaya Antar : ${newJarak}`)
         } else {
@@ -123,4 +123,4 @@ const pijarFood = (harga, voucher, jarak, pajak) => {
         }
     }
 }
-pijarFood(75000, 'id', 5, true)
+pijarFood(75000, 'PIJARFOOD5', 3.5, true)
