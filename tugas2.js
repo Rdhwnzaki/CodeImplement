@@ -99,6 +99,28 @@ const pijarFood = (harga, voucher, jarak, pajak) => {
                 console.log(`Sub Total : ${subTotal}`)
             }
         }
+    } else {
+        console.log(`Harga : ${harga}`)
+        if (jarak > 2) {
+            jarakAwal = 5000
+            jarakTambah = (jarak - 2) * 3000
+            newJarak = jarakAwal + jarakTambah
+            console.log(`Biaya Antar : ${newJarak}`)
+        } else {
+            newJarak = 5000
+            console.log(`Biaya Antar : ${newJarak}`)
+        }
+        if (pajak == true) {
+            pajak = (5 / 100) * harga
+            console.log(`Pajak : ${pajak}`)
+            subTotal = harga + newJarak + pajak
+            console.log(`Sub Total : ${subTotal}`)
+        } else {
+            pajak = 0
+            console.log(`Pajak : ${pajak}`)
+            subTotal = harga + newJarak
+            console.log(`Sub Total : ${subTotal}`)
+        }
     }
 }
-pijarFood(75000, 'PIJARFOOD5', 5, true)
+pijarFood(75000, 'id', 5, true)
